@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow API and temporary routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /temp/
+
+Sitemap: https://rudratek.v1/sitemap.xml
