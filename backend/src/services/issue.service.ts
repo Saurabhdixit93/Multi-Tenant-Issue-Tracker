@@ -31,7 +31,7 @@ export class IssueService {
     try {
       if (process.env.GEMINI_API_KEY) {
         const model = genAI.getGenerativeModel({
-          model: "gemini-1.5-flash",
+          model: "gemini-2.5-flash",
         });
 
         const prompt = `Categorize this software issue into ONE word (e.g., Bug, Feature, UI, Backend, Security, Performance). 
