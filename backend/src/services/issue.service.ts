@@ -31,8 +31,9 @@ export class IssueService {
     try {
       if (process.env.GEMINI_API_KEY) {
         const model = genAI.getGenerativeModel({
-          model: "gemini-2.0-flash-exp",
+          model: "gemini-1.5-flash",
         });
+
         const prompt = `Categorize this software issue into ONE word (e.g., Bug, Feature, UI, Backend, Security, Performance). 
         Title: ${data.title}
         Description: ${data.description || "No description provided"}`;
